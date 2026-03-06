@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span, a {
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sec-heading {
+  font-weight: 700;
+  font-size: 36px;
+  color: #101828;
+}
+
+.sec-desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #4a5565;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.hero,
+.why-chose-us {
+  background-color: #ffffff;
+  padding: 80px 24px;
+  /* border: 2px solid red; */
+}
+
+.hero .container,
+.why-chose-us .container {
+  width: 100%;
+  max-width: 1152px;
+  margin: auto;
+  /* border: 2px solid blue; */
+}
+
+.hero .container .hero-content {
+  width: 50%;
+  vertical-align: middle;
+}
+
+.hero .container .hero-img {
+  width: 49%;
+  padding: 0 70px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.hero .container .hero-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #101828;
+  line-height: 75px;
+  margin-bottom: 24px;
+}
+
+.hero .container .hero-content p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4a5565;
+  line-height: 33px;
+  margin-bottom: 32px;
+}
+
+.hero .container .hero-content .cta-start {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #000000;
+  line-height: 28px;
+  padding: 16px 32px;
+  margin-right: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.hero .container .hero-content .cta-learn-more {
+  font-size: 18px;
+  font-weight: 500;
+  color: #364153;
+  background-color: #ffffff;
+  line-height: 28px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 1.6px solid #d1d5db;
+}
+
+.hero .container .hero-img img {
+  max-width: 384px;
+  min-width: 384px;
+  border-radius: 16px;
+}
+
+
+.why-chose-us .container .title {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 64px;
+}
+
+.why-chose-us .container .title .sec-heading {
+  margin-bottom: 24px;
+}
+
+.why-chose-us .container .title .sec-desc {
+  max-width: 768px;
+  margin: auto;
+}
+
+.benefit-cards {
+  margin-bottom: 64px;
+}
+
+.card {
+  width: 30.7%;
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  display: inline-block;
+}
+
+.benefit-cards .blue-card{
+  background-color: #dbeafe;
+  border: 1px solid #bedbff;
+}
+
+.benefit-cards .green-card{
+  background-color: #d0fae5;
+  border: 1px solid #a4f4cf;
+  margin: 0 3.5%;
+}
+
+.benefit-cards .purple-card{
+  background-color: #f3e8ff;
+  border: 1px solid #e9d4ff;
+    min-height: 100%;
+
+}
+
+.outer-icon {
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  margin: 0 auto 24px;
+  border-radius: 12px;
+
+}
+
+.inner-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+}
+
+.blue-card .outer-icon {
+  background-color: #155dfb;
+}
+
+.blue-card .inner-icon {
+  border-radius: 8px;
+}
+
+.green-card .outer-icon {
+  background-color: #009966;
+}
+
+.green-card .inner-icon {
+  border-radius: 50%;
+}
+
+.purple-card .outer-icon {
+  background-color: #9810fa;
+}
+
+.purple-card .inner-icon {
+  border-radius: 4px;
+}
+
+.benefit-cards .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #101828;
+  margin-bottom: 16px;
+}
+
+.benefit-cards .card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #364153;
+  margin-bottom: 16px;
+}
+
+.img-wrapper {
+  width: 48%;
+}
+
+.img-wrapper img {
+  border-radius: 12px;
+  vertical-align: middle
+}
+
+.content-wrapper {
+  width: 47%;
+  margin-left: 4%;
+  vertical-align: middle;
+}
+
+.content-wrapper h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #101828;
+  margin-bottom: 24px;
+}
+
+.benefit {
+  margin-bottom: 16px;
+  padding-left: 24px;
+  border-left: 4px solid #101828;
+}
+
+.benefit h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #101828;
+  margin-bottom: 8px;
+}
+
+.benefit p {
+  color: #4a5565;
+}
