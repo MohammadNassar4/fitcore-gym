@@ -4,16 +4,30 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+input,
+select,
+textarea,
+button {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-span, a {
+span,
+a {
   display: inline-block;
 }
 
 img {
   max-width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #364153;
+  margin-bottom: 12px;
 }
 
 .sec-heading {
@@ -29,23 +43,47 @@ img {
   color: #4a5565;
 }
 
+.desc-color {
+  color: #4a5565;
+}
+
 .inline-block {
   display: inline-block;
 }
 
-.hero,
-.why-chose-us {
-  background-color: #ffffff;
-  padding: 80px 24px;
-  /* border: 2px solid red; */
+.float-left {
+  float: left;
 }
 
-.hero .container,
-.why-chose-us .container {
+.float-right {
+  float: right;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.hero,
+.why-chose-us,
+.testimonials,
+.membership-form,
+.footer {
+  background-color: #ffffff;
+  padding: 80px 24px;
+}
+
+.testimonials {
+  background-color: #f9fafb;
+}
+
+.footer {
+  background-color: #101828;
+}
+
+.container {
   width: 100%;
   max-width: 1152px;
   margin: auto;
-  /* border: 2px solid blue; */
 }
 
 .hero .container .hero-content {
@@ -105,18 +143,17 @@ img {
   border-radius: 16px;
 }
 
-
-.why-chose-us .container .title {
+.container .title {
   text-align: center;
   margin: auto;
   margin-bottom: 64px;
 }
 
-.why-chose-us .container .title .sec-heading {
+.container .title .sec-heading {
   margin-bottom: 24px;
 }
 
-.why-chose-us .container .title .sec-desc {
+.container .title .sec-desc {
   max-width: 768px;
   margin: auto;
 }
@@ -125,7 +162,7 @@ img {
   margin-bottom: 64px;
 }
 
-.card {
+.benefit-cards .card {
   width: 30.7%;
   padding: 32px;
   border-radius: 16px;
@@ -133,21 +170,21 @@ img {
   display: inline-block;
 }
 
-.benefit-cards .blue-card{
+.benefit-cards .blue-card {
   background-color: #dbeafe;
   border: 1px solid #bedbff;
 }
 
-.benefit-cards .green-card{
+.benefit-cards .green-card {
   background-color: #d0fae5;
   border: 1px solid #a4f4cf;
   margin: 0 3.5%;
 }
 
-.benefit-cards .purple-card{
+.benefit-cards .purple-card {
   background-color: #f3e8ff;
   border: 1px solid #e9d4ff;
-    min-height: 100%;
+  min-height: 100%;
 
 }
 
@@ -245,4 +282,233 @@ img {
 
 .benefit p {
   color: #4a5565;
+}
+
+.reviews {
+  margin-bottom: 64px;
+}
+
+.reviews .card {
+  width: 32%;
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.card.light-blue {
+  background-color: #eff6ff;
+  border: 1px solid #bedbff;
+}
+
+.card.light-green {
+  background-color: #ecfdf5;
+  border: 1px solid #a4f4cf;
+  margin: 0 2%;
+}
+
+.card.light-purple {
+  background-color: #faf5ff;
+  border: 1px solid #e9d4ff;
+}
+
+.card-header {
+  margin-bottom: 24px;
+}
+
+.reviews .card .author-img {
+  width: 64px;
+  margin-right: 16px;
+}
+
+.reviews .card .author-img img {
+  border-radius: 50%;
+}
+
+.author-info {
+  margin-top: 5px;
+}
+
+.author-info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #101828;
+  line-height: 1.4;
+}
+
+.statistics {
+  padding: 48px;
+  text-align: center;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+
+.statistics div {
+  width: 25%;
+  vertical-align: middle;
+
+}
+
+.statistics div h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.membership-form .container {
+  max-width: 896px;
+}
+
+.form-wrapper {
+  padding: 48px;
+  background-color: #f9fafb;
+  border-radius: 16px;
+}
+
+input,
+select,
+textarea,
+.submit {
+  padding: 16px 24px;
+  font-size: 18px;
+  line-height: 1.4;
+  background-color: inherit;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.form-group,
+.email,
+.phone,
+.membership,
+.fitness-goals,
+.submit {
+  margin-bottom: 24px;
+}
+
+.first-name,
+.last-name {
+  width: 48.5%;
+}
+
+textarea {
+  resize: none;
+  height: 96px;
+}
+
+.submit {
+  padding: 16px 32px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #000000;
+}
+
+.form-wrapper p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer .container .content {
+  margin-bottom: 48px;
+}
+
+.footer-info {
+  width: 49%;
+  margin-right: 3%;
+}
+
+.footer-info h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-info p {
+  font-size: 18px;
+  line-height: 1.625;
+  color: #99a1af;
+  margin-bottom: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-info ul li {
+  color: #99a1af;
+  margin-right: 24px;
+}
+
+.quick-links {
+  width: 26%;
+}
+
+.contact-info {
+  width: 22%;
+}
+
+.quick-links h4,
+.contact-info h4 {
+  font-size: 20px;
+  font-weight: 600px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.quick-links ul li {
+  margin-bottom: 12px;
+  line-height: 1.625;
+}
+
+a {
+  text-decoration: none;
+  color: #99a1af;
+}
+
+.address,
+.phone-number,
+.hours {
+  margin-bottom: 12px;
+}
+
+.address div:first-child,
+.phone-number div:first-child,
+.hours div:first-child {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.address div:nth-child(2),
+.phone-number div:nth-child(2),
+.hours div:nth-child(2) {
+  color: #99a1af;
+  line-height: 1.625;
+}
+
+.footer .container .copyright {
+  border-top: 1px solid #384154;
+  padding-top: 32px;
+}
+
+.footer .container .copyright p {
+  font-size: 14px;
+  color: #6a7282;
+}
+
+.copyright div a {
+  font-size: 14px;
+  color: #6a7282;
+}
+
+.copyright div a:first-child,
+.copyright div a:nth-child(2) {
+  margin-right: 24px;
 }
