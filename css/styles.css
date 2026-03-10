@@ -166,6 +166,7 @@ label {
 
 .benefit-cards .card {
   width: 30.7%;
+  min-height: 282.6px;
   padding: 32px;
   border-radius: 16px;
   text-align: center;
